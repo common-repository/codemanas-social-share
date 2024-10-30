@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'cm-fontello';
+    src: url('font/cm-fontello.eot?72637961');
+    src: url('font/cm-fontello.eot?72637961#iefix') format('embedded-opentype'),
+    url('font/cm-fontello.woff2?72637961') format('woff2'),
+    url('font/cm-fontello.woff?72637961') format('woff'),
+    url('font/cm-fontello.ttf?72637961') format('truetype'),
+    url('font/cm-fontello.svg?72637961#cm-fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'cm-fontello';
+    src: url('../font/cm-fontello.svg?72637961#cm-fontello') format('svg');
+  }
+}
+*/
+
+[class^="cm-icon-"]:before, [class*=" cm-icon-"]:before {
+    font-family: "cm-fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    text-align: center;
+    /* opacity: .8; */
+
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+
+    /* you can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.cm-icon-twitter:before { content: '\f304'; }
+.cm-icon-gplus:before { content: '\f0d4'; }
+.cm-icon-linkedin:before { content: '\f30c'; }
+.cm-icon-facebook-official:before { content: '\f308'; }
+.cm-icon-pinterest:before { content: '\f0d3'; }
+.cm-icon-whatsapp:before { content: '\f232'; }
+
+ul.cm-share {
+    list-style: none;
+    padding: 5px 0;
+    margin: 0 !important;
+}
+
+ul.cm-share li {
+    display: inline-block;
+}
+
+ul.cm-share li a,
+ul.cm-share li a:hover {
+    font-size: 24px;
+    text-decoration: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: none;
+}
+
+/* Default Color Codes for Social Icons*/
+ul li.cm-facebook a,
+ul li.cm-facebook a:hover {
+    color: #3b5998;
+}
+
+ul li.cm-twitter a,
+ul li.cm-twitter a:hover {
+    color: #1da1f2;
+}
+
+ul li.cm-google-plus a,
+ul li.cm-google-plus a:hover {
+
+    color: #d34836;
+}
+
+ul li.cm-whatsapp a,
+ul li.cm-whatsapp a:hover {
+    color: #25d366;
+}
+
+ul li.cm-linkedin a,
+ul li.cm-linkedin a:hover {
+    color: #007bb5;
+}
+
+ul li.cm-pinterest a,
+ul li.cm-pinterest a:hover {
+    color: #C92228;
+}
+
+/*Sticky Left Sidebar*/
+.cm-left-floater {
+    position: fixed;
+    left: 0;
+    top: 35%;
+    max-width: 32px;
+    z-index: 99999;
+    padding: 0 10px;
+}
+
+.cm-left-floater ul.cm-share li {
+    display: list-item;
+}
+
+.cm-feature-image-wrap {
+    position: relative;
+}
+
+.cm-feature-image-wrap ul {
+    position: absolute;
+    bottom: 0;
+    padding: 5px;
+    margin: 0;
+    background: #fff;
+}
